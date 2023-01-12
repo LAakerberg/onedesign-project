@@ -1,0 +1,20 @@
+/* Base style */
+
+@layer base {
+  body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0px auto;
+    /*background-color: #1f2d3b;*/
+  }
+}
+
+@layer base {
+  header,
+  main,
+  footer {
+    width: 100%;
+    margin: 0px auto;
+  }
+}
