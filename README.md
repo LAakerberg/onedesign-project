@@ -17,7 +17,8 @@ https://tailwindcss.com/docs/installation/using-postcss
 
 ## Installation of prettier
 
--
+- npm install --save-dev prettier
+- - test prettier: npx prettier -c src/\*_/_.js
 
 ## Installation of ESLint
 
