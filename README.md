@@ -17,7 +17,8 @@ https://tailwindcss.com/docs/installation/using-postcss
 
 ## Installation of prettier
 
--
+- npm install --save-dev prettier
+- - test prettier: npx prettier -c src/\*_/_.js
 
 ## Installation of ESLint
 
@@ -34,3 +35,20 @@ https://tailwindcss.com/docs/installation/using-postcss
 ✔ Where does your code run? · browser
 
 ✔ What format do you want your config file to be in? · JSON
+
+## Installation of mrm (lint-staged)
+
+- npx mrm@2 lint-staged
+- Add to package.json file:
+  "lint-staged": {
+  "_.js": [
+  "eslint --fix",
+  "prettier --write"
+  ],
+  "_.html": [
+  "prettier --write"
+  ],
+  "\*.scss": [
+  "prettier --write"
+  ]
+  }
